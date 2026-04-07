@@ -1,22 +1,24 @@
 import "./Properties.css";
 import PROPERTIES from "../../data";
+import PropertyCard from "../../components/PropertyCard/PropertyCard";
 
 function Properties() {
   return (
     <div>
       <h1>Properties</h1>
 
-      {PROPERTIES.map((propertyObj) => {
-        return (
-          <div className="property" key={propertyObj.id}>
-            <h2>{propertyObj.title}</h2>
-            <p>City: {propertyObj.city}</p>
-            <p>Area: {propertyObj.area}</p>
-            <p>Type: {propertyObj.propertyType}</p>
-            <p>Size: {propertyObj.size}</p>
-          </div>
-        );
-      })}
+      <div className="properties-container">
+        {PROPERTIES.map((propertyObj) => (
+          <PropertyCard
+            key={propertyObj.id}
+            title={propertyObj.title}
+            city={propertyObj.city}
+            area={propertyObj.area}
+            propertyType={propertyObj.propertyType}
+            rent={propertyObj.rent}
+          />
+        ))}
+      </div>
     </div>
   );
 }

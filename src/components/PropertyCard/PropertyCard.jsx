@@ -1,13 +1,14 @@
 import "./PropertyCard.css";
+import skyscraper from "./skyscraper.png";
 
-
-function PropertyCard({ title, propertyType, size, city }) {
+function PropertyCard({ title, city, area, propertyType }) {
   return (
     <div className="property-card">
-    <h2>{title}</h2>
-    <p> type: {propertyType}</p>
-    <p> size: {size}</p>
-    <p> city: {city}</p>
+      <img src={skyscraper} alt="property" />
+      <h2 className="property-title">{title}</h2>
+      <p>{city}</p>
+      <p>{area}</p>
+      <p>{propertyType}</p>
     </div>
   );
 }

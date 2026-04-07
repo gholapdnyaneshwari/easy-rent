@@ -1,5 +1,17 @@
-.property-card{
-    border: 1px solid black;
-    margin: 20px 10px;
-    
+.property-card {
+    width: 320px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.property-card:hover {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+.property-title {
+    font-size: 18px;
 }
