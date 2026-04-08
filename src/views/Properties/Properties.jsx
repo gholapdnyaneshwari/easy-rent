@@ -11,11 +11,15 @@ function Properties() {
         {PROPERTIES.map((propertyObj) => (
           <PropertyCard
             key={propertyObj.id}
+            id={propertyObj.id}
             title={propertyObj.title}
             city={propertyObj.city}
             area={propertyObj.area}
+            size={propertyObj.size}
             propertyType={propertyObj.propertyType}
             rent={propertyObj.rent}
+            rating={propertyObj.rating}
+            furnished={propertyObj.furnished}
           />
         ))}
       </div>

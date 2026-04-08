@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Properties from "./views/Properties/Properties";
+import PropertyDetails from "./views/PropertyDetails/PropertyDetails";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -13,7 +14,8 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/properties" element={<Properties />} />
+        <Route path="/properties" element={<Properties/>} />
+        <Route path="/property/:id" element={<PropertyDetails/>} />
       </Routes>
     </BrowserRouter>
     <Toaster />
