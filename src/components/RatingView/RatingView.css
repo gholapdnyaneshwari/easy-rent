@@ -1,0 +1,25 @@
+.star {
+    color: gold;
+    font-size: 22px;
+    margin-right: 1px;
+}
+.per-star {
+    color: gold;
+    font-size: 22px;
+    margin-right: 1px;
+    position: relative;
+    width: fit-content;
+}
+.per-star-cover{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+}
+.reting-view-container{
+    display: flex;
+    align-items: center;
+   
+}

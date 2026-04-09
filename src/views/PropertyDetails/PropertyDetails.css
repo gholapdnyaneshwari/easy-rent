@@ -1,3 +1,24 @@
 .property-image{
     height: 300px;
 }
+.review-card{
+    border: 1px solid black;
+    margin: 10px 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.review-card-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4da6ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 10px;
+}
